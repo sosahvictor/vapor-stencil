@@ -7,7 +7,7 @@ public class StencilRenderer: RenderDriver {
 	public let templateLoader: TemplateLoader
 
 	public init(namespace: Namespace = Namespace(), templateLoader: TemplateLoader? = nil) {
-		self.namespace = namespace ?? Namespace()
+		self.namespace = namespace
 		self.templateLoader = templateLoader ?? TemplateLoader(paths: [Path(View.resourceDir)])
 	}
 
