@@ -16,7 +16,7 @@ public class StencilRenderer: RenderDriver {
 		c["loader"] = self.templateLoader
 
 		let template = Template(templateString: template)
-		return try template.render(c, namespace: self.namespace)
+		return try template.render(c)
 	}
 
 }
